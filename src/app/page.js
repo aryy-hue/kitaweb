@@ -1,28 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Navbar from './Components/Navbar'
+
 
 export default function page() {
   return (
     <>
-      <nav class="bg-white flex items-center justify-between px-12 py-2 border-b-2 fixed z-10 w-full">
-          <Image
-                src="/logo-kitaweb.svg"
-                alt="kitaweb logo"
-                width={100}
-                height={24}
-          />
-          <div class="md:flex md:w-7/12 lg:w-5/12 hidden justify-around relative items-center">
-              <Link href="#">Home</Link>
-              <Link href="#about">About</Link>
-              <Link href="#service">Service</Link>
-              <Link href="#service">
-                  <span class="py-2 px-5 border-2 border-amber-500 rounded-full text-amber-500">
-                      Contact US
-                  </span>
-              </Link>
-          </div>
-      </nav>
-      <section class="bg-white h-screen px-10 md:px-16 pt-32 ">
+      <Navbar/>
+      
+      <section class="bg-white h-screen px-8 md:px-16 pt-32">
         <div class="bg-no-repeat bg-cover h-5/6 md:bg-center rounded-3xl overflow-hidden flex items-center md:items-end px-5 md:p-10" Style="background-image: url(/hero-image-sect1.png)">
           <span class="md:w-3/5 xl:w-2/5">
             <h2 class="md:text-6xl text-4xl font-bold">Quickest and Easy</h2>
@@ -39,7 +25,7 @@ export default function page() {
                 height={50}
           /></div></Link>
       </section>
-      <section class="bg-white md:grid grid-cols-2 grid-rows-2 md:grid-rows-1 items-center py-10 gap-3 px-10 md:px-16">
+      <section class="bg-white md:grid grid-cols-2 grid-rows-2 md:grid-rows-1 items-center py-10 gap-3 px-8 md:px-16">
         <div>
 
         <Image
